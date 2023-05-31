@@ -13,3 +13,173 @@
   --grayish-blue: hsl(210, 4%, 67%);
   --white: hsl(0, 0%, 100%);
 }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html body {
+  --heading-margin: 1.5rem;
+  --gd-p-font-size: 1.8rem;
+  font-size: 112.50%;
+  font-family: 'Barlow', sans-serif;
+  text-align: center;
+}
+
+nav ul {
+  list-style:none;
+}
+
+header nav {
+  display: none;
+}
+
+body header {
+  background-color: black;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+h1, a {font-family: 'Fraunces', serif;}
+
+h1 {
+  font-size: 2.1rem;
+  margin-bottom: var(--heading-margin);
+}
+
+a {
+  text-decoration: underline var(--soft-red);
+  color: var(--very-dark-desaturated-blue);
+}
+
+.transform,
+.standout {
+  padding: 3.5rem 1rem;
+}
+
+
+/* HEADER STYLES */
+.header-container {
+  position: absolute;
+  padding: 2rem 1.5rem;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.nav-button {
+  width: 2rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  cursor: pointer;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  display: block;
+}
+
+/* HOME STYLES */
+@keyframes bounce {
+  0%, 50%, 100% {
+    transform: translateY(0%);
+  }
+
+  25% {
+    transform: translateY(10%);
+  }
+}
+
+.home {
+  position: relative;
+}
+
+.home > .absolute-content {
+  position: absolute;
+  top: 9.5rem;
+  left: 0;
+}
+
+.home__heading {
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--white);
+}
+
+.down-arrow {
+  margin: 0 auto;
+  animation: bounce 1.5s infinite;
+  /* animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715); */
+}
+
+.graphic-design {
+  position: relative;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--graphic-design-text);
+}
+
+.graphic-design__heading {
+  font-size: var(--gd-p-font-size);
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.graphic-design > .absolute-content {
+  position: absolute;
+  bottom: 4rem;
+  padding-inline: 1rem;
+}
+
+.photography {
+  color: var(--photography-text);
+  font-size: 1.05rem;
+  line-height: 1.5;
+  position: relative;
+}
+
+.photography__heading {
+  font-size: var(--gd-p-font-size);
+  font-weight: 900;
+}
+
+.photography > .absolute-content {
+  position: absolute;
+  bottom: 4rem;
+  padding-inline: 1rem;
+}
+
+.testimonials__heading {
+  font-size: 1.6rem;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  color: var(--grayish-blue);
+}
+
