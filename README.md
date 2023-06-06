@@ -11,7 +11,6 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
@@ -27,7 +26,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![desktop screenshot](./images/sunnyside-agency-landing-page-desktop-screenshot.png)
+![mobile screenshot](./images/sunnyside-agency-landing-page-mobile-screenshot1.png)
+![mobile screenshot2](./images/sunnyside-agency-landing-page-mobile-screenshot2.png)
+![mobile screenshot3](./images/sunnyside-agency-landing-page-mobile-screenshot3.png)
 
 
 ### Links
